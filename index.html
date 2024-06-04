@@ -1,66 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GARAGE | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav>
-		<div class="nav_container">
-			<img src="./assets/monolith_logo.svg" alt="">
+  <nav>
+    <div class="nav__overlay"></div>
+    <div class="nav_container">
+      <figure class="logo_wrapper">
+        <img src="./assets/auto_logo.svg" alt="" width="100px">
+      </figure>
 
-			<ul class="nav_list">
-				<li class="nav_link">Home</li>
-				<li class="nav_link">Upcoming Events</li>
-				<li class="nav_link">Contact Us</li>
-				<li class="nav_link">Tickets</li>
-			</ul>
-		</div>
-	</nav>
+      <ul>
+        <li><a href="#" class="nav_link">Home</a></li>
+        <li><a href="#" class="nav_link">Connect</a></li>
+        <li><a href="#" class="nav_link">Marketplace</a></li>
+        <li><a href="#" class="nav_link">My Garage</a></li>
+      </ul>
+    </div>
+  </nav>
 
-	<figure class="concert_img--wrapper">
-		<img src="./assets/concert_img.jpeg" alt="" class="concert_img">
+  <section id="home">
+    <video src="./assets/AdobeStock_299472267.mov" id="home_video" autoplay muted loop></video>
+  
+    <h1 id="heading_1">Unleash Your Drive</h1>
+    <h1 id="heading_2">Redefine Your Journey</h1>
 
-		<p class="img--text">Rock Anthems, Biggest pop stars, All the genre's you love!</p>
-	</figure>
+    <button id="car_explore">Explore</button>
+  </section>
 
-	<section #ticket_table>
-		<div class="container">
-			<div class="row">
+  <section id="featured_models">
+    <div class="container">
+      <div class="row featured_row">
+        <h2 class="section_heading">Featured Models</h2>
+        <p class="section_sub--heading">Latest models releasing soon.</p>
 
-				
-				<div class="info--container">
-					<div class="ticket_info--box">
-						<div class="ticket">
-							<h2 class="ticket_type">General</h2>
-							<p class="ticket_price">$49.99</p>
-						</div>
-						
-						<div class="ticket">
-							<h2 class="ticket_type">VIP</h2>
-							<p class="ticket_price">$99.99</p>
-						</div>
-					</div>
+        <div class="featured_cars--container">
+          
+          <figure class="featured_car--wrapper">
+            <img src="./assets/featured_car1.jpeg" alt="" class="featured_car--img">
+            
+            <div class="car_info--container">
+              <h2 class="car_info--name">MAKI | K9</h2>
 
-					<input type="text" class="input-box--entertainer" placeholder="band, singer...">
-					<input type="text" class="input-box--tickets" placeholder="number of tickets">
-					<input type="text" class="input-box--type" placeholder="general, VIP">
+              <p class="car_price">$35,000</p>
+            </div>
 
-					<button id="btn">Submit</button>
-				</div>
+            <table class="car_stats--table">
+              <tr>
+                <th>Engine Type</th>
+                <td>6-Cylinder</td>
+              </tr>
 
-				<div class="final_receipt--box">
-					<p class="receipt_text--entertainer">Entertainer: </p>
-					<p class="receipt_text--tickets"># of tickets: </p>
-					<p class="receipt_text--type">Ticket Type: </p>
-					<p class="receipt_text--price">ticket price: </p>
-					<p class="receipt_text--total">Total: </p>
-				</div>
-			</div>
-		</div>
-	</section>
+              <tr>
+                <th>Transmission</th>
+                <td>Manual</td>
+              </tr>
+
+              <tr>
+                <th>Horse Power</th>
+                <td>141 @ 6500 rpm</td>
+              </tr>
+            </table>
+          </figure>
+
+          <figure class="featured_car--wrapper">
+            <img src="./assets/featured_car2.jpeg" alt="" class="featured_car--img">
+
+            <div class="car_info--container">
+              <h2 class="car_info--name">TOYOTA | GR SUPRA</h2>
+
+              <p class="car_price">$42,000</p>
+            </div>
+
+            <table class="car_stats--table">
+              <tr>
+                <th>Engine Type</th>
+                <td>8-Cylinder</td>
+              </tr>
+
+              <tr>
+                <th>Transmission</th>
+                <td>Manual / Automatic</td>
+              </tr>
+
+              <tr>
+                <th>Horse Power</th>
+                <td>300 @ 6500 rpm</td>
+              </tr>
+            </table>
+          </figure>
+
+          <figure class="featured_car--wrapper">
+            <img src="./assets/featured_car3.jpeg" alt="" class="featured_car--img">
+
+            <div class="car_info--container">
+              <h2 class="car_info--name">KIA | SPORTAGE</h2>
+
+              <p class="car_price">$50,000</p>
+            </div>
+
+            <table class="car_stats--table">
+              <tr>
+                <th>Engine Type</th>
+                <td>4-Cylinder</td>
+              </tr>
+
+              <tr>
+                <th>Transmission</th>
+                <td>Automatic</td>
+              </tr>
+
+              <tr>
+                <th>Horse Power</th>
+                <td>248 @ 6200 rpm</td>
+              </tr>
+            </table>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories">
+    <div class="container">
+      <div class="row">
+        <h2 class="section_heading">Recent News and Articles</h2>
+        <p class="section_sub--heading">Stay up to date.</p>
+
+        <div class="news__container">
+          <div class="news_box">
+            <figure class="car_news-img--wrapper">
+              <img src="./assets/car_news--1.webp" alt="" class="car_news-img--1">
+            </figure>
+
+            <div class="news_info">
+              <p>Introducing the new EV in the market.</p>
+              <a href="#" class="news_link">read article</a>
+            </div>
+          </div>
+
+          <div class="news_box">
+            <figure class="car_news-img--wrapper">
+              <img src="./assets/car_news--2.cms" alt="" class="car_news-img--1">
+            </figure>
+
+            <div class="news_info">
+              <p>2024 most expensive cars in the world</p>
+              <a href="#" class="news_link">read article</a>
+            </div>
+          </div>
+
+          <div class="news_box">
+            <figure class="car_news-img--wrapper">
+              <img src="./assets/car_news--3.webp" alt="" class="car_news-img--1">
+            </figure>
+
+            <div class="news_info">
+              <p>What Vehicle is best for your family?</p>
+              <a href="#" class="news_link">read article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="explore_cars">
+    <div class="container">
+      <div class="row">
+        <h2 class="">Find the Vehicle Right for You</h2>
+      </div>
+    </div>
+  </section>
+
+  <form>
+    <h2 class="contact_title">Contact Us</h2>
+
+    <label for="first_name">First Name</label>
+    <input type="text" name="firstName" id="first_name">
+
+    <label for="last_name">Last Name</label>
+    <input type="text" name="lastName" id="last_name">
+
+    <textarea name="user_input" id="user_text"></textarea>
+
+    <button id="contact--btn">SEND</button>
+  </form>
+
+  <footer>
+    <div class="footer_container">
+    </div>
+  </footer>
 </body>
 </html>

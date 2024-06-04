@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<div class="nav_container">
+			<img src="./assets/monolith_logo.svg" alt="">
+
+			<ul class="nav_list">
+				<li class="nav_link">Home</li>
+				<li class="nav_link">Upcoming Events</li>
+				<li class="nav_link">Contact Us</li>
+				<li class="nav_link">Tickets</li>
+			</ul>
+		</div>
+	</nav>
+
+	<figure class="concert_img--wrapper">
+		<img src="./assets/concert_img.jpeg" alt="" class="concert_img">
+
+		<p class="img--text">Rock Anthems, Biggest pop stars, All the genre's you love!</p>
+	</figure>
+
+	<section #ticket_table>
+		<div class="container">
+			<div class="row">
+
+				
+				<div class="info--container">
+					<div class="ticket_info--box">
+						<div class="ticket">
+							<h2 class="ticket_type">General</h2>
+							<p class="ticket_price">$49.99</p>
+						</div>
+						
+						<div class="ticket">
+							<h2 class="ticket_type">VIP</h2>
+							<p class="ticket_price">$99.99</p>
+						</div>
+					</div>
+
+					<input type="text" class="input-box--entertainer" placeholder="band, singer...">
+					<input type="text" class="input-box--tickets" placeholder="number of tickets">
+					<input type="text" class="input-box--type" placeholder="general, VIP">
+
+					<button id="btn">Submit</button>
+				</div>
+
+				<div class="final_receipt--box">
+					<p class="receipt_text--entertainer">Entertainer: </p>
+					<p class="receipt_text--tickets"># of tickets: </p>
+					<p class="receipt_text--type">Ticket Type: </p>
+					<p class="receipt_text--price">ticket price: </p>
+					<p class="receipt_text--total">Total: </p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

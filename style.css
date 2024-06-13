@@ -270,7 +270,7 @@ td {
 form {
 	position: fixed;
 	right: 4px;
-	bottom: -335px;
+	bottom: -230px;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
@@ -328,4 +328,8 @@ form > label {
 #contact--btn:hover {
 	cursor: pointer;
 	letter-spacing: 2px;
+}
+
+.cars_found {
+	margin-top: 32px;
 }

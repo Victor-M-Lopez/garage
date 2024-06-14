@@ -9,6 +9,9 @@ let carModel = document.getElementById("car_model");
 
 // cars found
 
-let Civic = ["Honda Civic 2009", "Honda Civic 2012", "Honda Civic 2018", "Honda Civic 2021"]
-let CRV = ["Honda CR-V 2009", "Honda CR-V 2011", "Honda CR-V 2019", "Honda CR-V 2022"]
-let 
+let hondaSedan = ["Honda Civic", "Honda Accord", "Honda Clarity"];
+let hondaSUV = ["Honda Passport", "Honda Ridgeline", "Honda Pilot"];
+
+let toyotaSedan = ["Toyota Camery", "Toyota Corolla", "Toyota Supra"];
+let toyotaSUV = ["Toyota RAV4", "Toyota C-HR", "Toyota Highlander"];
+let toyotaTruck = ["Toyota Tundra", "Toyota Tacoma"];

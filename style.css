@@ -266,3 +266,32 @@ td {
 	color: #E8E8E8;
 	border-radius: 4px;
 }
+
+
+/* my garage */
+#car_garage {
+	background-color: #EDEDED;
+	height: 100vh;
+}
+
+.car_garage--container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.my_garage--car1 {
+	display: block;
+	width: 100%;
+}
+
+.car_info--box {
+	height: 32px;
+	background-color: #FF4500;
+	border-bottom-right-radius: 32px;
+}
+
+.garage_car--wrapper {
+	width: 40%;
+}

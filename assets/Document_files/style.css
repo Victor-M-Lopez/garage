@@ -339,12 +339,3 @@ td {
 	margin-bottom: 40px;
 }
 
-.my_garage {
-	transition: background-color 300ms ease, padding 500ms ease, border-radius 2s ease;
-}
-
-.my_garage:hover {
-	background-color: #FF4500;
-	padding: 4px 16px;
-	border-radius: 8px;
-}

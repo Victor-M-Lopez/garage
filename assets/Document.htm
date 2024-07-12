@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/marketplace.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Document_files/style.css">
+  <script src="./Document_files/script.js" defer=""></script>
+</head>
+<body>
+  <nav>
+    <div class="nav__overlay"></div>
+    <div class="nav_container">
+      <figure class="logo_wrapper">
+        <img src="./Document_files/auto_logo.svg" alt="" width="100px">
+      </figure>
+
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html" class="nav_link">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/marketplace.html#" class="nav_link">Connect</a></li>
+        <li><a href="http://127.0.0.1:5500/marketplace.html" class="nav_link">Marketplace</a></li>
+        <li><a href="http://127.0.0.1:5500/mygarage.html" class="nav_link">My Garage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="playground">
+   <div class="menu_section">
+    <p class="title">Welcome to Burger V. here is our menu</p>
+
+    <p class="food_type">BURGERS</p>
+    
+    <div class="burger_container">
+      <button id="burger1" class="menu_item">Double Cheeseburger $7.99</button>
+      <button id="burger2" class="menu_item">Monster Bacon Cheeseburger $9.99</button>
+      <button id="burger3" class="menu_item">Impossible Burger $11.99</button>
+    </div>
+
+    <p class="food_type">CHICKEN</p>
+
+    <div class="burger_container">
+      <button id="burger4" class="menu_item">Tenders $5.99</button>
+      <button id="burger5" class="menu_item">Chicken Sandwich $9.99</button>
+      <button id="burger6" class="menu_item">Wings $11.99</button>
+      <button id="burger7" class="menu_item">Nuggets $11.99</button>
+    </div>
+
+    <p class="food_type">SIDES</p>
+
+    <div class="burger_container">
+      <button id="burger8" class="menu_item">Fries $5.99</button>
+      <button id="burger9" class="menu_item">Mozorella Sticks $5.99</button>
+      <button id="burger10" class="menu_item">Onion Rings $6.99</button>
+      <button id="burger11" class="menu_item">Tater Tots $11.99</button>
+    </div>
+   </div>
+  </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

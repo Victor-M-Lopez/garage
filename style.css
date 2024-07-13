@@ -9,7 +9,7 @@
 }
 
 /* animation for headings */
-@keyframes slide_right {
+/* @keyframes slide_right {
 	0% {left: -500px; opacity: 0;}
 	100% {left: 24px; opacity: 1;}
 }
@@ -17,7 +17,7 @@
 @keyframes nav_animate {
 	0% {opacity: 0; top: -50;}
 	100% {opacity: 1; top: 0;}
-}
+} */
 
 
 body {
@@ -33,7 +33,9 @@ nav {
 	animation: nav_animate 4s forwards;
 }
 
-
+button:hover {
+	cursor: pointer;
+}
 
 .nav_container {
 	padding: 16px 24px;
@@ -340,11 +342,138 @@ td {
 }
 
 .my_garage {
+	border: 1px solid #FF4500;
+	padding: 4px 16px;
+	border-radius: 8px;
 	transition: background-color 300ms ease, padding 500ms ease, border-radius 2s ease;
 }
 
 .my_garage:hover {
 	background-color: #FF4500;
-	padding: 4px 16px;
+}
+
+
+
+/* Login Modal */
+#login_modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #FFF;
+	width: 400px;
+	height: 600px;
+	z-index: 100;
 	border-radius: 8px;
+	padding: 32px;
+}
+
+.modal_hidden,
+.modal_visible {
+	transition: visibility 300ms ease-in-out;
+}
+
+.modal_hidden {
+	visibility: hidden;
+}
+
+.modal_visible {
+	visibility: visible;
+}
+
+#exit_modal {
+	position: absolute;
+	top: 12px;
+	right: 24px;
+	font-size: 32px;
+	background-color: transparent;
+	border: none;
+	transition: font-size 300ms ease;
+}
+
+#exit_modal:hover {
+	font-size: 34px;
+}
+
+.form_title {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 200;
+	margin: 12px 0 32px 0;
+}
+
+#login_form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.form_set {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+}
+
+#password,
+#email {
+	margin-top: 12px;
+	width: 100%;
+	padding: 12px 12px;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+}
+
+#password:focus,
+#email:focus {
+	outline: none;
+	border-color: #FF4500;
+}
+
+#password:hover,
+#email:hover {
+	outline: none;
+	border-color: #FF4500;
+}
+
+#user_login--btn {
+	width: 120px;
+	align-self: center;
+	border: none;
+	padding: 8px 32px;
+	border-radius: 12px;
+	background-color: #FF4500;
+	color: #FFF;
+
+	transition: width 300ms ease;
+	transition: letter-spacing 500ms ease;
+}
+
+.orange_layer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 8px;
+	width: 100%;
+	height: 100px;
+	background-color: #FF4500;
+	clip-path: polygon(100% 100%, 100% 10%, 20% 10%, 0% 100%);
+}
+
+#sign_up {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 32px;
+	padding: 8px 24px;
+	border: none;
+	border-radius: 12px;
+	font-weight: 600;
+	transition: letter-spacing 500ms ease;
+	align-self: center;
+}
+
+#user_login--btn:hover,
+#sign_up:hover {
+	letter-spacing: 4px;
 }

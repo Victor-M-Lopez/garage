@@ -24,8 +24,28 @@
     </div>
   </nav>
 
-  <div id="login_modal">
-    
+  <!-- modal -->
+  <div id="login_modal" class="modal_hidden">
+    <button id="exit_modal">x</button>
+    <form action="#" id="login_form">
+      <h2 class="form_title">LOG IN</h2>
+
+      <fieldset class="form_set">
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+      </fieldset>
+
+      <fieldset class="form_set">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+      </fieldset>
+
+      <button id="user_login--btn">Log in</button>
+
+      <div class="orange_layer">
+        <button id="sign_up">Sign Up</button>
+      </div>
+    </form>
   </div>
 
   <section id="home">

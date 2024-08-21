@@ -10,7 +10,11 @@
 
 body {
 	background-color: #fff;
-	color: #000;
+	color: #fff;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 #web_title {
@@ -37,4 +41,144 @@ body {
 
 .project_link:hover {
 	transform: translate(4px, -8px);
+}
+
+/* Guessing Game */
+#guessing_game {
+	background-color: #202020;
+	width: 100%;
+	height: 100vh;
+}
+
+.text-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 32px;
+}
+
+.play_again {
+	font-size: 40px;
+	background-color: #eee;
+	border: none;
+	padding: 4px 8px;
+}
+
+.number_range {
+	font-size: 32px;
+}
+
+.number_container {
+	position: relative;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.number_display {
+	width: 120px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	z-index: 99;
+}
+
+#number {
+	font-size: 80px;
+	font-weight: 900;
+	color: #202020;
+}
+
+.game_info--container {
+	margin-top: 100px;
+	padding: 4px 32px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.line {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 10px;
+	background-color: #fff;
+}
+
+.input_box {
+	width: 150px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#text_input {
+	width: 100px;
+	height: 75px;
+	font-size: 40px;
+	padding: 2px;
+	text-align: center;
+	outline: none;
+	border: none;
+}
+
+.button_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#arrow_down {
+	transform: rotate(180deg);
+}
+
+#arrow_down,
+#arrow_up {
+	border: none;
+	background-color: #ccc;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+}
+
+#arrow_down:active,
+#arrow_up:active {
+	background-color: #aaa;
+}
+
+#check_number {
+	font-size: 32px;
+	background-color: #fff;
+	border: none;
+}
+
+.buttons-container {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.game_information {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.game_information p {
+	font-size: 32px;
+}
+
+.game_guess-text {
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 60px;
+	width: 100%;
+	text-align: center;
 }

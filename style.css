@@ -23,7 +23,7 @@ button:hover {
 }
 
 .javascript_img {
-	width: 500px;
+	width: 100%;
 	display: block;
 }
 
@@ -183,7 +183,7 @@ button:hover {
 	text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.game_information p {
 		font-size: 20px;
 	}

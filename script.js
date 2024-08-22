@@ -18,7 +18,7 @@ let gameHighScore = document.querySelector('#game_high-score');
 
 function startGame() {
 	correctNumber.value = Math.trunc(Math.random() * 20) + 1;
-	Number(gameScore.textContent);
+	Number(gameScore.value);
 
 	increaseNumberBtn.addEventListener('click', function () {
 		if (numberInput.value < 20) {
@@ -37,7 +37,7 @@ function startGame() {
 			message.textContent = 'Correct!';
 			gameBackground.style.backgroundColor = 'green';
 			correctNumber.textContent = correctNumber.value;
-			gameHighScore.value = gameScore.textContent;
+			gameHighScore.value = gameScore.value;
 
 			if (gameScore.textContent >= gameHighScore.textContent) {
 				gameHighScore.textContent = gameScore.textContent;
@@ -50,6 +50,12 @@ function startGame() {
 		} else {
 			message.textContent = 'Too High!';
 			gameScore.textContent--;
+		}
+
+		if (gameScore.textContent == 0) {
+			message.textContent = 'you lose!';
+			gameBackground.style.backgroundColor = 'red';
+			correctNumber.textContent = correctNumber.value;
 		}
 	});
 

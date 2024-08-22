@@ -182,3 +182,9 @@ button:hover {
 	width: 100%;
 	text-align: center;
 }
+
+@media (max-width: 500px) {
+	.game_information p {
+		font-size: 20px;
+	}
+}

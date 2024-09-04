@@ -3,15 +3,31 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
+		<title>JMP | Modals</title>
+		<link rel="stylesheet" href="style_modals.css" />
+		<script src="script(modal).js" defer></script>
 	</head>
 	<body id="modals">
-		<div class="modal_container">
-			<button id="modal-btn--1">Modal 1</button>
-			<button id="modal-btn--2">Modal 2</button>
-			<button id="modal-btn--3">Modal 3</button>
+		<div class="button_container">
+			<button id="moda_btn-1" class="modal_btn">modal 1</button>
+			<button id="moda_btn-2" class="modal_btn">modal 2</button>
+			<button id="moda_btn-3" class="modal_btn">modal 3</button>
 		</div>
+
+		<div id="modal-1" class="hidden">
+			<button id="x-btn">X</button>
+
+			<p>modal 1</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci
+				odit cum quae iste ea quaerat voluptas officia distinctio vitae illum
+				repellendus, rem blanditiis amet quas corporis inventore? Delectus dicta
+				quisquam amet ea excepturi maxime, facere temporibus ratione,
+				repudiandae fuga, dolorum illo neque? Ducimus voluptate sapiente autem
+				at quisquam eveniet.
+			</p>
+		</div>
+
+		<div class="overlay hidden"></div>
 	</body>
 </html>

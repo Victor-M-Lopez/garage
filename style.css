@@ -191,3 +191,40 @@ button:hover {
 }
 
 /* modals */
+#modals {
+	padding: 16px;
+	position: relative;
+}
+
+.modal_container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#modal-btn--1,
+#modal-btn--2,
+#modal-btn--3 {
+	border: none;
+	padding: 4px 16px;
+	background-color: green;
+	color: #fff;
+	font-size: 20px;
+}
+
+#modal_1,
+#modal_2,
+#modal_3 {
+	position: absolute;
+}
+
+#modal_1 {
+	background-color: #ececec;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	color: #000;
+	top: 50%;
+	left: 50%;
+}

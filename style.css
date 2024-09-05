@@ -38,6 +38,7 @@ button:hover {
 	font-size: 24px;
 	transition: transform 300ms ease;
 	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .project_link:hover {

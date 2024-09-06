@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	font-family: 'Smooch Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#dice_game {
+	background: linear-gradient(45deg, #b34cc7, #ff4d2a);
+	width: 100%;
+	height: 100vh;
+}
+
+.game_container {
+	position: fixed;
+	width: 800px;
+	height: 450px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 50;
+
+	display: flex;
+}
+
+.player1,
+.player2 {
+	width: 50%;
+	height: 100%;
+	opacity: 0.6;
+}
+
+.player1 {
+	background-color: #aeaeae;
+}
+
+.player2 {
+	background-color: #f1f1f1;
+}
+
+.player_container,
+.player_2--container {
+	position: absolute;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px;
+}
+
+.player_container {
+	right: 50%;
+}
+
+.player_2--container {
+	left: 50%;
+	right: 0;
+}
+
+.name {
+	font-size: 40px;
+	font-weight: 300;
+}
+
+#player_1_score,
+#player_2_score {
+	font-size: 80px;
+	font-weight: 600;
+	color: #db3b7e;
+}
+
+.current_score_container {
+	border-radius: 8px;
+	width: 150px;
+	height: 75px;
+	color: #fff;
+	background-color: #db3b7e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8px;
+	gap: 4px;
+	font-weight: 200;
+	letter-spacing: 0.2rem;
+	position: absolute;
+	bottom: 100px;
+}
+
+#score1,
+#score2 {
+	font-size: 32px;
+}
+
+#new_game-btn,
+#roll_dice-btn,
+#hold-btn {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	padding: 4px 32px;
+	font-size: 18px;
+	border: none;
+	opacity: 0.8;
+	border-radius: 32px;
+}
+
+#new_game-btn {
+	top: 10%;
+}
+
+#roll_dice-btn {
+	bottom: 100px;
+}
+
+#hold-btn {
+	bottom: 50px;
+}
+
+#dice_img {
+	width: 75px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 125px;
+}

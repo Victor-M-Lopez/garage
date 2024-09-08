@@ -8,37 +8,35 @@
 		<script src="./script_dice.js" defer></script>
 	</head>
 	<body id="dice_game">
-		<div class="game_container">
-			<div class="player1"></div>
+		<section id="player1" class="player_box active_player">
+			<p class="player_name">Player 1</p>
+			<p id="player0_score">0</p>
 
-			<div class="player_container">
-				<h1 class="name">PLAYER 1</h1>
-
-				<p id="player_1_score">0</p>
-
-				<div class="current_score_container">
-					<p>CURRENT</p>
-					<p id="score1">0</p>
-				</div>
+			<div id="points-box">
+				<p>CURRENT</p>
+				<p id="player0_current_score">0</p>
 			</div>
+		</section>
 
-			<div class="player2"></div>
-			<div class="player_2--container">
-				<h1 class="name">PLAYER 2</h1>
+		<section id="player2" class="player_box">
+			<p class="player_name">Player 2</p>
+			<p id="player1_score">0</p>
 
-				<p id="player_2_score">0</p>
-
-				<div class="current_score_container">
-					<p>CURRENT</p>
-					<p id="score2">0</p>
-				</div>
+			<div id="points-box">
+				<p>CURRENT</p>
+				<p id="player1_current_score">0</p>
 			</div>
+		</section>
 
-			<button id="new_game-btn">🔄 NEW GAME</button>
-			<button id="roll_dice-btn">🎲 ROLL DICE</button>
-			<button id="hold-btn">📥 HOLD</button>
+		<button id="restart-btn">Restart Game</button>
+		<button id="roll-btn">Roll Dice</button>
+		<button id="hold-btn">Hold</button>
 
-			<img src="./assets/dice_1.svg" alt="dice svg" id="dice_img" />
-		</div>
+		<img
+			src="./assets/dice_1.svg"
+			alt="dice img"
+			id="dice_img"
+			class="hidden"
+		/>
 	</body>
 </html>

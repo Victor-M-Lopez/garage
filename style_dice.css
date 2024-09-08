@@ -16,122 +16,86 @@ button:hover {
 	background: linear-gradient(45deg, #b34cc7, #ff4d2a);
 	width: 100%;
 	height: 100vh;
-}
-
-.game_container {
-	position: fixed;
-	width: 800px;
-	height: 450px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 50;
-
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.player1,
-.player2 {
-	width: 50%;
-	height: 100%;
-	opacity: 0.6;
-}
-
-.player1 {
-	background-color: #aeaeae;
-}
-
-.player2 {
-	background-color: #f1f1f1;
-}
-
-.player_container,
-.player_2--container {
-	position: absolute;
-	height: 100%;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	bottom: 0;
+#player1,
+#player2 {
+	width: 46%;
+	max-width: 500px;
+	min-width: 400px;
+	height: 400px;
+	opacity: 0.5;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 32px;
+	gap: 32px;
+	font-size: 32px;
+	color: #ff4d2a;
 }
 
-.player_container {
-	right: 50%;
+#player0_score,
+#player1_score {
+	font-size: 60px;
+	font-weight: 500;
 }
 
-.player_2--container {
-	left: 50%;
-	right: 0;
+.player_box {
+	background-color: #cecece;
 }
 
-.name {
-	font-size: 40px;
-	font-weight: 300;
+.active_player {
+	background-color: #fff;
+	transition: background-color 500ms ease;
 }
 
-#player_1_score,
-#player_2_score {
-	font-size: 80px;
-	font-weight: 600;
-	color: #db3b7e;
+.player_name {
+	color: #000;
 }
 
-.current_score_container {
-	border-radius: 8px;
-	width: 150px;
+#points-box {
+	width: 100px;
 	height: 75px;
+	background-color: #ff4d2a;
+	border-radius: 8px;
 	color: #fff;
-	background-color: #db3b7e;
+	font-size: 24px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 8px;
-	gap: 4px;
-	font-weight: 200;
-	letter-spacing: 0.2rem;
-	position: absolute;
-	bottom: 100px;
+	margin-top: 75px;
 }
 
-#score1,
-#score2 {
-	font-size: 32px;
-}
-
-#new_game-btn,
-#roll_dice-btn,
-#hold-btn {
+button {
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 100;
-	padding: 4px 32px;
-	font-size: 18px;
 	border: none;
+	padding: 8px 24px;
 	opacity: 0.8;
-	border-radius: 32px;
+	font-size: 20px;
 }
 
-#new_game-btn {
-	top: 10%;
+#restart-btn {
+	top: 30%;
 }
 
-#roll_dice-btn {
-	bottom: 100px;
+#roll-btn {
+	bottom: 38%;
 }
 
 #hold-btn {
-	bottom: 50px;
+	bottom: 30%;
 }
 
 #dice_img {
-	width: 75px;
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 125px;
+	top: 40%;
+	width: 80px;
+}
+
+.hidden {
+	display: none;
 }
